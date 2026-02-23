@@ -13,6 +13,8 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+  run_exports:
+    - {{ pin_subpackage('hits', max_pin="x.x") }}
 
 requirements:
   build:
