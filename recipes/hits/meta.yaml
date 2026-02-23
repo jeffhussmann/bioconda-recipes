@@ -23,12 +23,13 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.12
     - cython
     - pip
+    - setuptools
     - setuptools-scm
   run:
-    - python
+    - python >=3.12
     - biopython >=1.72
     - bokeh >=3.2
     - ipython >=7.8.0
